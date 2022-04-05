@@ -1,0 +1,20 @@
+
+{% section 'about-card' %}
+	 <div class="grid about-grid">
+      <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+        <div class="section-header text-center" style="margin-top: -20px;">
+          <h1>{{ page.none }}</h1>
+        </div>
+        <div class="text-left">
+        {% if page.content != blank %}
+            <div class="rte">
+                {{ page.content }}
+            </div>
+        {% endif %}        
+        </div> 
+      </div>
+      {% section 'about-owner' %}
+    </div>
+ {% section 'about-owner-V2' %}
+{% section "newsletter" %}
+  </div>

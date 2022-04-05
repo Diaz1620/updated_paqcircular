@@ -1,0 +1,1157 @@
+{
+  "current": {
+    "color_text": "#ff8231",
+    "color_body_text": "#3b4654",
+    "color_button": "#ff8231",
+    "color_small_button_text_border": "#3b4654",
+    "color_text_field_text": "#3b4654",
+    "color_text_field_border": "#3b4654",
+    "color_text_field": "#e8e8e4",
+    "color_image_overlay_text": "#3b4654",
+    "color_image_overlay": "#e8e8e4",
+    "image_overlay_opacity": 29,
+    "newsletter_bg": "#3b4654",
+    "newsletter_text": "#ff8231",
+    "newsletter_border": "#f9f7f5",
+    "newsletter_button": "#ffffff",
+    "newsletter_button_text": "#3b4654",
+    "accent_color": "#e8e8e4",
+    "color_borders": "#3b4654",
+    "color_body_bg": "#fff",
+    "type_header_font": "itc_berkeley_old_style_n5",
+    "type_header_base_size": 26,
+    "type_base_font": "open_sans_n4",
+    "type_base_size": 19,
+    "share_facebook": true,
+    "share_twitter": false,
+    "share_pinterest": false,
+    "social_twitter_link": "https:\/\/twitter.com\/paqcircular",
+    "social_facebook_link": "https:\/\/facebook.com\/paq",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/paqcircular\/",
+    "favicon": "shopify:\/\/shop_images\/paq_logo_mark.png",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "left",
+          "scroll-back_logo": true,
+          "text_transform": "uppercase",
+          "title_color": "#ff8231",
+          "bg_color": "#3b4654",
+          "mobile_bg_color": "#3b4654",
+          "links_color": "#ff8231",
+          "search_drawer_color": "#e8e8e4",
+          "logo": "shopify:\/\/shop_images\/paq_logo.png",
+          "logo_max_width": 100,
+          "main_linklist": "main-menu",
+          "message": true,
+          "home_page_only": false,
+          "annouce_text_transform": "uppercase",
+          "message_text": "",
+          "message_link": "\/",
+          "color_bg": "#3b4654",
+          "color_text": "#3b4654"
+        }
+      },
+      "collection-list": {
+        "type": "collection-list",
+        "disabled": true,
+        "blocks": {
+          "1492096252560-2": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "all-products"
+            }
+          },
+          "1492096252560-0": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "collection"
+            }
+          },
+          "1422096252960-0": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "collection"
+            }
+          },
+          "1492096259560-0": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "collection"
+            }
+          }
+        },
+        "block_order": [
+          "1492096252560-2",
+          "1492096252560-0",
+          "1422096252960-0",
+          "1492096259560-0"
+        ],
+        "settings": {
+          "title": "Thinking Outside of the Box",
+          "size": "80",
+          "grid": 4
+        }
+      },
+      "feature-row": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/person_and_boxes.png",
+          "fixed_size": "80",
+          "image_rotate": "Horizontal",
+          "image_width": 47,
+          "background_color": "full",
+          "layout": "right",
+          "title": "We're Paq",
+          "text": "<p>Online shopping is all about convenience, but unboxing is a pretty big hassle. We create a better experience for consumers and businesses by going reusable.<\/p><p><\/p><p><\/p>",
+          "button_label": "More About Us",
+          "button_link": "shopify:\/\/pages\/about-us"
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "slideshow-columns-0": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Better_Experience._Less_Waste._c09c98af-81ae-4daa-9934-a4e93f6cfcd1.png",
+              "alignment": "center bottom",
+              "slide_color": "#3b4654",
+              "slide_title": "Simple, Reusable Packaging",
+              "subheading": "",
+              "button_label": "Learn More",
+              "button_link": "shopify:\/\/pages\/how-it-works"
+            }
+          },
+          "slideshow-columns-1": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "alignment": "center center",
+              "slide_color": "#ffffff",
+              "slide_title": "Fusce consequat",
+              "subheading": "Tell your brand's story through images",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "slideshow-columns-2": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "alignment": "center center",
+              "slide_color": "#131313",
+              "slide_title": "Vivamus tempus",
+              "subheading": "Tell your brand's story through images",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "slideshow-columns-0",
+          "slideshow-columns-1",
+          "slideshow-columns-2"
+        ],
+        "settings": {
+          "slideshow_height": "large",
+          "text_size": "large",
+          "text_alignment": "center bottom",
+          "show_overlay": false,
+          "autorotate": true,
+          "autorotate_speed": 6
+        }
+      },
+      "feature-row-1": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/ocean_1c037546-7dd6-4bb9-8ee5-afd81e3e33e4.png",
+          "fixed_size": "80",
+          "image_rotate": "Horizontal",
+          "image_width": 47,
+          "background_color": "none",
+          "layout": "left",
+          "title": "The Parcel Problem",
+          "text": "<p>Over 20 billion packages are delivered in the US every year.  That's a lot of cardboard and plastic that ends up in our landfills and oceans.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "feature-columns": {
+        "type": "feature-columns",
+        "blocks": {
+          "feature-columns-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Untitled_1024_x_2048_px_2600_x_1400_px_4142_x_3000_px.png",
+              "title": "",
+              "text": "<p>Order online<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "feature-columns-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Untitled_1024_x_2048_px_2600_x_1400_px_4142_x_3000_px_4aa54cf9-0fc1-45cb-92cb-fc8060da992d.png",
+              "title": "",
+              "text": "<p>Fulfill<\/p>",
+              "button_label": "Visit our FAQ",
+              "button_link": "shopify:\/\/pages\/frequently-asked-questions"
+            }
+          },
+          "feature-columns-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/MicrosoftTeams-image_1_d5397059-777e-4975-816f-623a1e07516d.jpg",
+              "title": "",
+              "text": "<p>Bring joy to customers<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "feature-columns-0",
+          "feature-columns-1",
+          "feature-columns-2"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "center"
+        }
+      },
+      "collection": {
+        "type": "collection",
+        "disabled": true,
+        "settings": {
+          "title": "Shop Bestsellers",
+          "collection": "shop",
+          "grid": 4,
+          "rows": 2,
+          "onhover": true,
+          "product_img_rotate": "Vertical",
+          "product_img_ratio": "66.66666667",
+          "title_color": "#6d6558",
+          "text_alignment": "center",
+          "show_vendor": false,
+          "show_view_all": true
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+          "section_title": "Join the Paq",
+          "subheading": "",
+          "show_background": true
+        }
+      },
+      "rich-text": {
+        "type": "rich-text",
+        "disabled": true,
+        "settings": {
+          "full_width": false,
+          "section_title": "How we are thinking outside of the box",
+          "text": "<p>.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "quotes": {
+        "type": "quotes",
+        "blocks": {
+          "quotes-0": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>\"Responsible packaging builds customer trust. <\/p><p>A brand may be organic or pure and authentic. <\/p><p>But if their packaging is non-sustainable, the brand promise is not credible.\"<\/p>",
+              "author": "- Larry Light, Forbes"
+            }
+          },
+          "03af5a87-9474-49dc-9519-ce449e25988b": {
+            "type": "quote",
+            "disabled": true,
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          }
+        },
+        "block_order": [
+          "quotes-0",
+          "03af5a87-9474-49dc-9519-ce449e25988b"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "featured-blog": {
+        "type": "featured-blog",
+        "settings": {
+          "title": "Recently On The Blog",
+          "title_color": "#caad8b",
+          "blog": "news",
+          "post_limit": 3,
+          "blog_img_rotate": "Horizontal",
+          "blog_img_ratio": "75",
+          "text_alignment": "center",
+          "blog_show_author": false,
+          "blog_show_date": true,
+          "show_view_all": false
+        }
+      },
+      "image-bar": {
+        "type": "image-bar",
+        "blocks": {
+          "image-bar-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Mike_and_ernie.jpg",
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "image-bar-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2022-03-01_09-41-55.png",
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "image-bar-2": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Fozzie.jpg",
+              "alignment": "center",
+              "link": "",
+              "cta_label": "Fozzie"
+            }
+          }
+        },
+        "block_order": [
+          "image-bar-0",
+          "image-bar-1",
+          "image-bar-2"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-1": {
+            "type": "newsletter",
+            "disabled": true,
+            "settings": {
+              "title": "Join the Paq!"
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "title": "",
+              "menu": "footer"
+            }
+          },
+          "footer-2": {
+            "type": "link_list",
+            "disabled": true,
+            "settings": {
+              "title": "My Account",
+              "menu": "my-account"
+            }
+          },
+          "footer-3": {
+            "type": "link_list",
+            "disabled": true,
+            "settings": {
+              "title": "Customer Service",
+              "menu": "customer-service"
+            }
+          }
+        },
+        "block_order": [
+          "footer-1",
+          "footer-0",
+          "footer-2",
+          "footer-3"
+        ],
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/paq_logo.png",
+          "show_payment_icons": false,
+          "color_footer_bg": "#e8e8e4",
+          "color_footer_text": "#3b4654",
+          "show_locale_selector": false,
+          "show_currency_selector": false
+        }
+      },
+      "about-card": {
+        "type": "about-card",
+        "settings": {
+          "hide": false,
+          "image": "shopify:\/\/shop_images\/iStock-1089963266.jpg",
+          "fixed_size": "80",
+          "image_rotate": "Vertical",
+          "image_width": 52,
+          "background_color": "full",
+          "layout": "left",
+          "title": "Let's Make Delivery Better",
+          "title_color": "#ff8231",
+          "text": "<p>We started Paq because we were tired of the growing piles of waste created by our online shopping.  We are providing reusable packaging and supporting services to improve the experience and make it more sustainable.<\/p><p><\/p><p><\/p><p>We are passionate about providing solutions to retailers which delight their customers with a unique and fun experience.  As we started to explore reuse, we realized that the potential went far beyond a sustainable box.  We aren't just providing packaging, we're creating a movement that will enable anyone to reduce their footprint while enjoying the convenience of online shopping.<\/p><p><\/p><p><\/p><p>Our goal is to build a reusable ecosystem for eCommerce.  We're doing this through creating innovative packages and supporting services to move things around.  By bringing a fresh approach to delivery, we're able to enhance the customer experience, learn more, and leave a smaller footprint.  Want to learn more?  Contact us today.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "about-owner": {
+        "type": "about-owner",
+        "settings": {
+          "hide": false,
+          "image": "shopify:\/\/shop_images\/Mike_and_ernie.jpg",
+          "fixed_size": "80",
+          "image_rotate": "Horizontal",
+          "image_width": 45,
+          "layout": "right",
+          "title": "",
+          "title_color": "#ff8231",
+          "text": "<p>\"While home delivery is convenient, I was tired of the cardboard & plastic bag waste that came along with it.  We started Paq as a way to improve the experience and make online shopping more sustainable.\"<\/p><p><em>Mike, Co-Founder<\/em><\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "hero-shop-now": {
+        "type": "hero-shop-now",
+        "settings": {
+          "parallax": true,
+          "alignment": "center",
+          "content_alignment": "center",
+          "hero_layout": "fixed_width",
+          "hero_size": "small",
+          "text_size": "medium",
+          "title": "",
+          "text": "",
+          "button_label": "Explore Our Products",
+          "button_link": "shopify:\/\/collections\/all"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity_selector": true,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": true,
+          "fixed_size": "100",
+          "image_rotate": "Vertical",
+          "media_size": "large",
+          "enable_image_zoom": true,
+          "enable_video_looping": false
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": false,
+          "heading": "You may also like",
+          "onhover": true,
+          "product_img_rotate": "Vertical",
+          "product_img_ratio": "66.66666667",
+          "title_color": "#908778",
+          "text_alignment": "center",
+          "show_vendor": false
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": 3,
+          "rows": 3,
+          "show_collection_image": true,
+          "bg_color": "#e8e8e4",
+          "text_color": "#3b4654",
+          "show_vendor": false,
+          "sort_enable": false,
+          "tags_enable": false,
+          "types_enable": false,
+          "onhover": false,
+          "product_img_rotate": "Vertical",
+          "product_img_ratio": "100",
+          "title_color": "#3b4654",
+          "text_alignment": "center"
+        }
+      },
+      "1644497857cac7309b": {
+        "type": "hero-shop-now",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/708567E9-FCEB-4F45-94AA-63D96A3E9714_0bddfccf-0bd7-46eb-abc0-2d27f83e891c.jpg",
+          "parallax": true,
+          "alignment": "center",
+          "content_alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "small",
+          "text_size": "medium",
+          "title": "",
+          "text": "",
+          "button_label": "Explore How It Works",
+          "button_link": "shopify:\/\/pages\/how-it-works"
+        }
+      },
+      "hero": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/shutterstock_1489927220_1.jpg",
+          "parallax": false,
+          "alignment": "center",
+          "content_alignment": "right",
+          "hero_layout": "fixed_width",
+          "hero_size": "small",
+          "text_size": "medium",
+          "title": "",
+          "text": "",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "about-owner-V2": {
+        "type": "about-owner-V2",
+        "settings": {
+          "hide": false,
+          "image": "shopify:\/\/shop_images\/2022-03-01_09-41-55.png",
+          "fixed_size": "80",
+          "image_rotate": "Horizontal",
+          "image_width": 47,
+          "layout": "left",
+          "title": "",
+          "title_color": "#ff8231",
+          "text": "<p>\"Every little action that you take to reduce waste adds up over time. Paq isn't just reusable packaging, it's an experience that will enable anyone to participate in doing something responsible for the environment.\"<\/p><p><em>Jenn, Co-Founder<\/em><\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "hero-how-it-works": {
+        "type": "hero-how-it-works",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Conveyor.png",
+          "parallax": true,
+          "alignment": "center",
+          "content_alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "small",
+          "text_size": "large",
+          "title": "Are you ready to lead the paq?",
+          "text": "",
+          "button_label": "Contact Us",
+          "button_link": "shopify:\/\/pages\/contact-us"
+        }
+      },
+      "rich-text-V2": {
+        "type": "rich-text-V2",
+        "settings": {
+          "full_width": false,
+          "section_title": "Focused on Simplicity",
+          "text": "<p>Getting started with Paq is easy.  <\/p><p>Place your order, get it delivered just like any other stack of boxes, and start packing.<\/p><p>Our packaging is designed to work within existing fulfillment operations. We just try to make it a little easier.  <\/p><p><\/p><p><\/p>",
+          "text_size": "medium"
+        }
+      },
+      "banner": {
+        "type": "banner",
+        "blocks": {
+          "7d02cf25-a7e2-4a71-9c14-187d30625a99": {
+            "type": "banner",
+            "disabled": true,
+            "settings": {
+              "product_column_handle": "3",
+              "product_column_handle_md": "4",
+              "product_column_handle_sm": "6",
+              "img1": "shopify:\/\/shop_images\/shutterstock_1511554190.jpg",
+              "t1": "15% off",
+              "t2": "Table Shiner<br>Moving.",
+              "btn1": "SHOP NOW",
+              "btn1_url": "shopify:\/\/collections\/all",
+              "text1_p": "style_1",
+              "banner_custom_enable": false,
+              "t1_color": "#1f2226",
+              "t2_color": "#1f2226",
+              "btn1_color": "#1f2226",
+              "btn1_border_color": "#1f2226"
+            }
+          },
+          "37f6a836-bc82-4607-909b-3311fd132f72": {
+            "type": "section_margin",
+            "settings": {
+              "section_margin_top": 65,
+              "section_margin_bottom": 70,
+              "section_margin_top_md": 0,
+              "section_margin_bottom_md": 0,
+              "section_margin_top_xs": 0,
+              "section_margin_bottom_xs": 0
+            }
+          }
+        },
+        "block_order": [
+          "7d02cf25-a7e2-4a71-9c14-187d30625a99",
+          "37f6a836-bc82-4607-909b-3311fd132f72"
+        ],
+        "settings": {
+          "section_width": "default",
+          "no_gutter_enable": true,
+          "tab_arsoule_active": false,
+          "carsoule_banner_col": 4,
+          "carsoule_banner_col_lg": 3,
+          "carsoule_banner_col_md": 2,
+          "carsoule_banner_col_sm": 1,
+          "tab_arsoule_arrow_enable": true,
+          "product_casoule_row": 2
+        }
+      },
+      "feature-row-V2": {
+        "type": "feature-row-V2",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Paq_Design_600X600_800_x_550_px.png",
+          "fixed_size": "75",
+          "image_rotate": "Horizontal",
+          "image_width": 53,
+          "background_color": "none",
+          "layout": "right",
+          "title": "Circular Fulfillment Model",
+          "text": "<p>Creating a smarter and stronger supply chain ecosystem through reusable parcels.  Each parcel has a life of up to 75 uses.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "large-banner": {
+        "type": "large-banner",
+        "blocks": {
+          "a559a675-38c9-406c-abe4-400fdb82e4dd": {
+            "type": "section_padding",
+            "settings": {
+              "section_padding_top": 70,
+              "section_padding_bottom": 0,
+              "section_padding_top_md": 0,
+              "section_padding_bottom_md": 0,
+              "section_padding_top_xs": 0,
+              "section_padding_bottom_xs": 0
+            }
+          },
+          "1b504c78-a95e-43cb-98d9-d92d1b7f87e7": {
+            "type": "lookbook_product_add",
+            "disabled": true,
+            "settings": {
+              "product_handgle_id": "",
+              "vertical_postion": 30,
+              "horizontal_postion": 30,
+              "prouct_title_limit": 4
+            }
+          }
+        },
+        "block_order": [
+          "a559a675-38c9-406c-abe4-400fdb82e4dd",
+          "1b504c78-a95e-43cb-98d9-d92d1b7f87e7"
+        ],
+        "settings": {
+          "banner_img": "shopify:\/\/shop_images\/shipping_label.png",
+          "lookbook_productbtn": "",
+          "lookbook_banner_btn_enable": false,
+          "lookbook_btn_text": "",
+          "lookbook_btn_link": "",
+          "btn_margin_top": 29
+        }
+      },
+      "rich-text-V3": {
+        "type": "rich-text-V3",
+        "settings": {
+          "full_width": false,
+          "section_title": "Better Experience",
+          "text": "<p>Paq enhances the delivery experience with reusable packaging that's easy to open and simple to reuse.<\/p><p>Our packaging is simple to assemble, closes without tape, and built to last for over 50 uses.<\/p><p><\/p><p><\/p>",
+          "text_size": "medium"
+        }
+      },
+      "1645291156c9a607cd": {
+        "type": "about-card",
+        "disabled": true,
+        "settings": {
+          "hide": false,
+          "image": "shopify:\/\/shop_images\/2022-02-23_18-19-29.jpg",
+          "fixed_size": "80",
+          "image_rotate": "Horizontal",
+          "image_width": 54,
+          "background_color": "none",
+          "layout": "right",
+          "title": "Thinking Outside of the Box",
+          "title_color": "#ff8231",
+          "text": "<p>A Circular Fulfillment Model using reusable packaging<\/p><p>✓ Better Delivery Experience<\/p><p>✓ Simple Integration<\/p><p>✓ Less Waste<\/p>",
+          "button_label": "Learn More",
+          "button_link": "shopify:\/\/pages\/how-it-works"
+        }
+      },
+      "custom-content": {
+        "type": "custom-content",
+        "blocks": {
+          "cde57594-cb9d-4fce-8b4b-fd6c33e5245c": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/shutterstock_1511554190.jpg",
+              "width": "100%",
+              "alignment": "middle-left"
+            }
+          }
+        },
+        "block_order": [
+          "cde57594-cb9d-4fce-8b4b-fd6c33e5245c"
+        ],
+        "settings": {
+          "title": "Our Values"
+        }
+      },
+      "feature-row-V3": {
+        "type": "feature-row-V3",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/experiene_a7e6b3b5-b3e3-43bf-99c4-b9068722ed09.jpg",
+          "fixed_size": "80",
+          "image_rotate": "Vertical",
+          "image_width": 100,
+          "background_color": "full",
+          "layout": "left",
+          "title": "Simple Return",
+          "text": "",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "rich-text-V5": {
+        "type": "rich-text-V5",
+        "settings": {
+          "full_width": false,
+          "section_title": "Meet the Team",
+          "text": "",
+          "text_size": "medium"
+        }
+      },
+      "image-bar-V2": {
+        "type": "image-bar-V2",
+        "blocks": {
+          "828cbced-1485-4a61-9511-04e116743bbd": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Untitled_1920_x_550_px_a58c3381-161b-41b6-960f-29877d2a6c26.png",
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "828cbced-1485-4a61-9511-04e116743bbd"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "1645655091b75488c6": {
+        "type": "custom-content",
+        "disabled": true,
+        "blocks": {
+          "d0318cbf-b99d-459f-a69d-c4dbf99d7b71": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "title": "Talk about your brand",
+              "text": "<p>&lt;p&gt;&lt;link href=\"https:\/\/file.myfontastic.com\/VrV7utSkyFGXupt3oJ2jWT\/icons.css\" rel=\"stylesheet\"&gt;&lt;p&gt;<\/p>",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          },
+          "a561b14d-e35b-436e-aa0f-3377be628113": {
+            "type": "html",
+            "disabled": true,
+            "settings": {
+              "code": "<br>\n<font size=\" +2.5\">\n\n<p><\/p>\n<p style=\"text-align:center\" li=\"\"> We are creating a circular fulfillment model<br>that will enable:\n<br>\n<br>\n<\/p>\n<ul>\n<font size=\" +1.5\">\n<\/font><p><\/p>\n<p style=\"text-align:center\" li=\"\"><font size=\" +2\">✓ Sustainable solutions for eCommerce growth\n<br>\n<br>\n<\/font><\/p>\n<font size=\" +2\">\n<p><\/p>\n<p style=\"text-align:center\" li=\"\">✓ Better Consumer Experience\n<br>\n<br><\/p>\n<p><\/p>\n<p style=\"text-align:center\" li=\"\">✓ Less Waste<\/p>\n<\/font>\n<\/ul><\/font>",
+              "width": "50%"
+            }
+          },
+          "c4b751d9-4f00-4b1c-886b-e200f5d0d085": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Untitled_1024_x_2048_px_2600_x_1400_px_4142_x_3000_px_d0637f0f-305f-4263-8131-f018645f0a0c.png",
+              "width": "50%",
+              "alignment": "middle-left"
+            }
+          }
+        },
+        "block_order": [
+          "d0318cbf-b99d-459f-a69d-c4dbf99d7b71",
+          "a561b14d-e35b-436e-aa0f-3377be628113",
+          "c4b751d9-4f00-4b1c-886b-e200f5d0d085"
+        ],
+        "settings": {
+          "title": "Thinking Outside"
+        }
+      },
+      "custom-content-icon": {
+        "type": "custom-content-icon",
+        "settings": {
+          "title": "Custom content"
+        }
+      },
+      "custom-content-contact": {
+        "type": "custom-content-contact",
+        "settings": {
+          "title": "Contact Us"
+        }
+      },
+      "hero-how-it-works-V2": {
+        "type": "hero-how-it-works-V2",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Untitled_1920_x_550_px_0f899fe5-8cd1-46b5-ad2c-8f9009e40eb7.png",
+          "parallax": false,
+          "alignment": "center",
+          "content_alignment": "center",
+          "hero_layout": "fixed_width",
+          "hero_size": "medium",
+          "text_size": "medium",
+          "title": "",
+          "text": "",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "164688262234d2649d": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Untitled_design_46624a8d-f01a-4e9d-9b81-a791f9523df1.png",
+          "fixed_size": "80",
+          "image_rotate": "Horizontal",
+          "image_width": 50,
+          "background_color": "full",
+          "layout": "right",
+          "title": "Think Outside the Box",
+          "text": "<p>We provide a reusable service that offers:<\/p><p>✓ Efficient eCommerce fulfillment <\/p><p>✓ Better consumer experience<\/p><p>✓ Less Waste<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "video": {
+        "type": "video",
+        "settings": {
+          "image_position": "center center",
+          "video_link": "https:\/\/youtu.be\/9-2vNWbMda0",
+          "show_overlay": false,
+          "style": "background",
+          "height": "medium",
+          "video_title": "",
+          "text_size": "medium"
+        }
+      },
+      "hero-contact-page": {
+        "type": "hero-contact-page",
+        "settings": {}
+      },
+      "contact-form-V2": {
+        "type": "contact-form-V2",
+        "settings": {}
+      },
+      "slideshow-how-it-works": {
+        "type": "slideshow-how-it-works",
+        "blocks": {
+          "4f792cca-9e8d-4fa2-b787-b0d4d3a4f67c": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Untitled_design_2c93f270-b221-4698-a777-d4e0ea900384.png",
+              "alignment": "center center",
+              "slide_color": "#ffffff",
+              "slide_title": "",
+              "subheading": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "4f792cca-9e8d-4fa2-b787-b0d4d3a4f67c"
+        ],
+        "settings": {
+          "slideshow_height": "medium",
+          "text_size": "medium",
+          "text_alignment": "center center",
+          "show_overlay": false,
+          "autorotate": true,
+          "autorotate_speed": 6
+        }
+      },
+      "16483441022cf5fb72": {
+        "type": "hero-how-it-works-V2",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Better_Experience._Less_Waste._c09c98af-81ae-4daa-9934-a4e93f6cfcd1.png",
+          "parallax": true,
+          "alignment": "center",
+          "content_alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "large",
+          "text_size": "large",
+          "title": "Simple, Reusable Packaging",
+          "text": "",
+          "button_label": "Learn More",
+          "button_link": "shopify:\/\/pages\/how-it-works"
+        }
+      },
+      "feature-columns-V2": {
+        "type": "feature-columns-V2",
+        "blocks": {
+          "75b42075-074f-4898-a59e-f8ebd7eb1de1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Jenn.png",
+              "title": "Jenn",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "5293b4e0-f5aa-46c9-b0b6-4784197f8b52": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/Mike.png",
+              "title": "Mike",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "2525b762-fac8-49dc-90b8-c015b2cb0717": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "image": "shopify:\/\/shop_images\/GrizFoz.png",
+              "title": "Paq Pups",
+              "text": "",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "75b42075-074f-4898-a59e-f8ebd7eb1de1",
+          "5293b4e0-f5aa-46c9-b0b6-4784197f8b52",
+          "2525b762-fac8-49dc-90b8-c015b2cb0717"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "center"
+        }
+      },
+      "quotes-V2": {
+        "type": "quotes-V2",
+        "blocks": {
+          "13d16c3b-5ba1-40f6-8736-d444cc23ca9a": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Through enabling small everyday actions, we can make a big difference, especially when the alternative is easier than just throwing something out.<\/p>",
+              "author": ""
+            }
+          }
+        },
+        "block_order": [
+          "13d16c3b-5ba1-40f6-8736-d444cc23ca9a"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "button": {
+        "type": "button",
+        "settings": {
+          "text-box": "",
+          "link": "shopify:\/\/pages\/frequently-asked-questions",
+          "linktext": "Learn More"
+        }
+      },
+      "1649167691b4afde81": {
+        "type": "featured-blog",
+        "disabled": true,
+        "settings": {
+          "title": "Recently On The Blog",
+          "title_color": "#caad8b",
+          "blog": "news",
+          "post_limit": 3,
+          "blog_img_rotate": "Horizontal",
+          "blog_img_ratio": "75",
+          "text_alignment": "center",
+          "blog_show_author": false,
+          "blog_show_date": true,
+          "show_view_all": false
+        }
+      }
+    },
+    "content_for_index": [
+      "16483441022cf5fb72",
+      "quotes",
+      "feature-row",
+      "feature-row-1",
+      "rich-text",
+      "1645291156c9a607cd",
+      "164688262234d2649d",
+      "1645655091b75488c6",
+      "1644497857cac7309b",
+      "1649167691b4afde81",
+      "newsletter"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "hero-1": {
+          "type": "hero",
+          "settings": {
+            "parallax": true,
+            "alignment": "center",
+            "content_alignment": "center",
+            "hero_layout": "full_width",
+            "hero_size": "large",
+            "text_size": "medium",
+            "title": "Interdum et malesuada",
+            "text": "<p>Quisque feugiat tellus rhoncus vulputate ante felis dignissim eget<\/p>",
+            "button_label": "Shop now",
+            "button_link": "shopify:\/\/collections\/shop"
+          }
+        },
+        "featured-blog": {
+          "type": "featured-blog",
+          "settings": {
+            "blog": "news"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {}
+        },
+        "feature-columns": {
+          "type": "feature-columns",
+          "blocks": {
+            "feature-columns-0": {
+              "type": "text_block",
+              "settings": {}
+            },
+            "feature-columns-1": {
+              "type": "text_block",
+              "settings": {}
+            },
+            "feature-columns-2": {
+              "type": "text_block",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "feature-columns-0",
+            "feature-columns-1",
+            "feature-columns-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "grid": 3
+          }
+        },
+        "hero-2": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "quotes": {
+          "type": "quotes",
+          "blocks": {
+            "quotes-0": {
+              "type": "quote",
+              "settings": {}
+            },
+            "quotes-1": {
+              "type": "quote",
+              "settings": {}
+            },
+            "quotes-2": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "quotes-0",
+            "quotes-1",
+            "quotes-2"
+          ],
+          "settings": {}
+        },
+        "image-bar": {
+          "type": "image-bar",
+          "blocks": {
+            "image-bar-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "image-bar-1": {
+              "type": "image",
+              "settings": {}
+            },
+            "image-bar-2": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "image-bar-0",
+            "image-bar-1",
+            "image-bar-2"
+          ],
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "footer-1": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1"
+          ],
+          "settings": {
+            "show_payment_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+        "hero-1",
+        "feature-row",
+        "quotes",
+        "collection",
+        "featured-blog",
+        "hero-2"
+      ]
+    }
+  }
+}

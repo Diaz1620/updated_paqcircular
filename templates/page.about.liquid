@@ -1,0 +1,23 @@
+<div class="page-container drawer-page-content" style="width: 100%; padding-bottom: 0px; padding-top: 0px">
+  <div class="shopify-section-footer" style="margin-top: 0px">
+  <div class="shopify-section-rich-text-V5" style= "margin-bottom: -20px">
+ 
+{% section "about-card" %}
+	 <div class="grid about-grid">
+      <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+        <div class="section-header text-center" style="margin-top: -20px; margin-bottom: 100px">
+          <h1>{{ page.none }}</h1>
+        </div>
+        <div class="text-left">
+        {% if page.content != blank %}
+            <div class="rte">
+                {{ page.content }}
+            </div>
+        {% endif %}        
+        </div> 
+  {% section "quotes-V2" %}
+      </div>
+{% section "rich-text-V5" %} 
+{% section "feature-columns-V2" %}
+  <div>
+  <div>

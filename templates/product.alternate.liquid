@@ -1,0 +1,307 @@
+{% comment %}
+  The contents of the product.liquid template can be found in /sections/product-template.liquid
+{% endcomment %}
+
+<style>
+  .template-product .main-content {
+    padding-bottom: 65px;
+  }
+
+  .shopify-payment-button__button {
+    border-radius: 0;
+  } 
+
+</style>
+
+{% section 'product-template' %}
+{% section 'product-recommendations' %}
+
+<script>
+  // Override default values of shop.strings for each template.
+  // Alternate product templates can change values of
+  // add to cart button, sold out, and unavailable states here.
+  theme.productStrings = {
+    addToCart: {{ 'products.product.add_to_cart' | t | json }},
+    soldOut: {{ 'products.product.sold_out' | t | json }},
+    unavailable: {{ 'products.product.unavailable' | t | json }}
+  }
+</script>
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": {{ product.title | json }}, 
+  "url": {{ shop.url | append: product.url | json }},
+  {%- if product.featured_media -%}
+    {%- assign media_size = product.featured_media.preview_image.width | append: 'x' -%}
+    "image": [
+      {{ product.featured_media | img_url: media_size | prepend: "https:" | json }}
+    ],
+  {%- endif -%}
+  "description": {{ product.description | strip_html | json }},
+  {%- if current_variant.sku != blank -%}
+    "sku": {{ current_variant.sku | json }},
+  {%- endif -%}
+  "brand": {
+    "@type": "Thing",
+    "name": {{ product.vendor | json }}
+  },
+  "offers": [
+    {%- for variant in product.variants -%}
+      {
+        "@type" : "Offer",
+        {%- if variant.sku != blank -%}
+          "sku": {{ variant.sku | json }},
+        {%- endif -%}
+        "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
+        "price" : {{ variant.price | divided_by: 100.00 | json }},
+        "priceCurrency" : {{ cart.currency.iso_code | json }},
+        "url" : {{ shop.url | append: variant.url | json }}
+      }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>
+<section class="single-product" id="section-{{ section.id }}">
+  <div class="container{% if settings.section_full_width %}-fluid section-padding-1{% endif %}">
+    <div class="row">
+      <div class="col-12">
+
+
+        {%- assign on_sale = false -%}
+        {%- if product.compare_at_price > product.price -%}
+        {%- assign on_sale = true -%}
+        {%- endif -%}
+
+        {%- assign sold_out = true -%}
+        {%- if product.available -%}
+        {%- assign sold_out = false -%}
+        {%- endif -%}
+
+        {%- assign current_variant = product.selected_or_first_available_variant -%}
+
+        <div class="product-details-area common_slick_slider">
+
+          <div class="row{% if section.settings.content_handle == 'content_in_left' and section.settings.product_style != 'slider' %} flex-row-reverse{% endif %}">
+
+            {%- if section.settings.product_style == 'tab_style_1' -%}
+            {%- render 'tab-style-1', product: product, on_sale: on_sale, sold_out: sold_out, current_variant: current_variant -%}
+
+            {%- elsif section.settings.product_style == 'tab_style_2' -%}
+            {%- render 'tab-style-2', product: product, on_sale: on_sale, sold_out: sold_out, current_variant: current_variant -%}
+
+            {%- elsif section.settings.product_style == 'tab_style_3' -%}
+            {%- render 'tab-style-3', product: product, on_sale: on_sale, sold_out: sold_out, current_variant: current_variant -%}
+
+            {%- elsif section.settings.product_style == 'gallery' -%}
+            {%- render 'gallery-style', product: product, on_sale: on_sale, sold_out: sold_out, current_variant: current_variant -%}
+
+            {%- elsif section.settings.product_style == 'sticky' -%}
+            {%- render 'sticky-style', product: product, on_sale: on_sale, sold_out: sold_out, current_variant: current_variant -%}
+
+            {%- elsif section.settings.product_style == 'slider' -%}
+            {%- render 'slider-style', product: product, on_sale: on_sale, sold_out: sold_out, current_variant: current_variant -%}
+            {%- endif -%}
+
+          </div>
+        </div>
+
+        {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'additional_info' -%}  
+         	{%- render 'size-guide-popup', block: block -%}
+          	{%- render 'shipping-policy-popup' , block: block -%}
+          	{%- render 'contact-popup' , block: block -%}
+
+          {%- when 'product_actions' -%}  
+          {%- if block.settings.sticky_product_enable -%}
+          	{% render 'sticky-add-to-cart' with product as product %}
+          {%- endif -%}
+
+        {% endcase %}
+        {% endfor %}   
+        
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{%- for block in section.blocks -%}
+{%- case block.type -%}
+{%- when 'product_actions' -%}  
+
+
+{% style %}
+  .dynamic_btn {
+    max-width: 340px;
+	margin-bottom: 20px;
+  }
+  .dynamic_btn button {
+    padding: 23px 38px;
+    border-radius: 0;
+    background-color: #1f2226;
+    font-size: 16px;
+    box-shadow: 10px 25px 80px rgb(150 150 150 / 15%);
+  }
+  .dynamic_btn button:hover {
+    background-color: {{ settings.color_primary }} !important;
+  }
+
+
+{% endstyle %}
+
+
+{% endcase %}
+{% endfor %} 
+
+{%- if section.settings.product_zoom_enable -%}
+<script src="{{ 'jquery.elevateZoom-3.0.8.min.js' | asset_url }}"></script>
+{%- endif -%}
+
+{%- if section.settings.product_popup_enable -%}
+{{ 'jquery.fancybox.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'jquery.fancybox.min.js' | asset_url }}"></script>
+
+<script>
+  $(document).ready(function() {
+    $('.fancybox').fancybox();
+  });
+</script>
+{%- endif -%}
+
+{%- if section.settings.product_style == 'product_sticky' -%}
+<script src="{{ 'ResizeSensor-StickySidebar.js' | asset_url }}"></script>
+<script>
+  var sidebar = new StickySidebar('#product-content', {
+    containerSelector: '#product-details-with-gallery',
+    innerWrapperSelector: '.product-content-inner',
+    topSpacing: 20,
+    bottomSpacing: 20,
+    minWidth: 992,
+  });
+</script>
+{% endif %}
+
+
+<script>
+  var selectCallback = function(variant, selector) {
+    timber.productPage({
+      money_format: '{{ shop.money_format }}',
+      variant: variant,
+      selector: selector
+    });
+    
+    if (variant) {
+      
+      // Current variant select+
+      var form = jQuery('#' + selector.domIdPrefix).closest('form');
+      for (var i=0,length=variant.options.length; i<length; i++) {
+        var val = variant.options[i].replace(/'/g,"&#039;");
+        var radioButton = form.find(".swatch[data-option-index='" + i + "'] :radio[value='" + val +"']");
+        if (radioButton.size()) {
+          radioButton.get(0).checked = true;
+        }
+      }
+    
+    
+      {%- for block in section.blocks -%}
+      {%- case block.type -%}
+      {%- when 'inventory' -%}  
+      /* -- code added for Inventory -- */
+      var selectors = {
+        variantInventory: '.variant-inventory'
+      };  
+      var inventory_level = (inv_qty[ variant.id ]);
+      if (inventory_level == 0){
+        $(selectors.variantInventory, this.$container).html('{{ block.settings.out_of_stock_title }}').show();
+      }
+      else if (inventory_level > 100) {
+          $(selectors.variantInventory, this.$container).html("{{ block.settings.in_stock_title }}").show();
+      }                
+      else {
+        $(selectors.variantInventory, this.$container).html(inventory_level + ' {{ block.settings.left_in_stock_title }}').show();
+      }
+      /* - Inventory end - */
+      {% endcase %}
+	  {% endfor %}    
+                                                            
+                                                             
+
+      	// Current sku pass
+      	$('.variant-sku').text(variant.sku);
+    	}else {
+     	 $('.variant-sku').empty();
+    	}  
+    
+    
+    
+    
+    {%- if section.settings.product_zoom_enable -%}
+    // product image zoom with variant
+    if (variant && variant.featured_image) { 
+      jQuery('#ProductThumbs a[data-image-id="' + variant.featured_image.id + '"]').trigger('click'); 
+    }
+    {%- endif -%}
+
+  };
+  
+  jQuery(function($) {
+    new Shopify.OptionSelectors('productSelect', {
+      product: {{ product | json }},
+      onVariantSelected: selectCallback,
+      enableHistoryState: true
+    });
+
+    // Add label if only one product option and it isn't 'Title'. Could be 'Size'.
+    {% if product.options.size == 1 and product.options.first != 'Title' %}
+      $('.selector-wrapper:eq(0)').prepend('<label for="productSelect-option-0">{{ product.options.first | escape }}</label>');
+    {% endif %}
+
+    // Hide selectors if we only have 1 variant and its title contains 'Default'.
+    {% if product.variants.size == 1 and product.variants.first.title contains 'Default' %}
+      $('.selector-wrapper').hide();
+    {% endif %}
+  });
+  
+  {%- if section.settings.product_zoom_enable -%}
+  function productZoom(){
+    $(".product-zoom").elevateZoom({
+      gallery: 'ProductThumbs',
+      galleryActiveClass: "active",
+      zoomType: "{{ section.settings.zoom_type }}",
+      cursor: "crosshair"
+    });
+    {%- if section.settings.product_popup_enable -%}
+    $(".product-zoom").on("click", function(e) {
+      var ez = $('.product-zoom').data('elevateZoom');
+      $.fancybox(ez.getGalleryList());
+      return false;
+    });
+    {% endif %}
+  };
+  function productZoomDisable(){
+    if( $(window).width() < 767 ) {
+      $('.zoomContainer').remove();
+      $(".product-zoom").removeData('elevateZoom');
+      $(".product-zoom").removeData('zoomImage');
+    } else {
+      productZoom();
+    }
+  };
+
+  productZoomDisable();
+
+  $(window).resize(function() {
+    productZoomDisable();
+  });
+  {%- endif -%}
+  
+</script>
+

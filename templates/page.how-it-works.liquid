@@ -1,0 +1,29 @@
+<div class="page-container drawer-page-content" style="width: 100%; padding-bottom: 0px; padding-top: 0px">
+
+<style>
+  {%- if image.height <= height %}
+    {% assign maximum_height = image.height %}
+  {% else %}
+    {% assign maximum_height = height %}
+  {% endif -%}
+
+  {%- assign maximum_width = maximum_height | times: image.aspect_ratio -%}
+
+  #{{ img_id }} {
+    max-width: {{ maximum_width }}px;
+    max-height: {{ maximum_height }}px;
+  }
+
+  #{{ wrapper_id }} {
+    max-width: {{ maximum_width }}px;
+  }
+</style>
+
+{% section "rich-text-V3" %}
+{% section "slideshow-how-it-works" %}
+{% section "rich-text-V2" %}
+{% section "feature-columns" %}
+{% section "rich-text-V4" %}
+{% section "video" %}
+  
+
