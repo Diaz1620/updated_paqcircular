@@ -1,9 +1,10 @@
 
 
 </style>
-<div class="page-width contact_page"> 
-  <div class="grid">
-    <div class="grid__item" style="padding-left: 0;">
+<div class="contact_page contact_grid-container">
+<div class=""> 
+  <div class="">
+    <div class="" style="padding-left: 0;">
        
       <div class="titleandabout">
         <div class="section-header text-left" style="margin-bottom: 40px; margin-top: 20px"> 
@@ -64,5 +65,9 @@
         {% endform %}
       </div>
     </div>
-  </div> 
- 
+  </div>
+</div>
+    {% comment %} Custom contact section for allowing image selection {% endcomment %}
+    {% section 'contact' %}
+    {% comment %} End of custom contact section {% endcomment %}
+</div>

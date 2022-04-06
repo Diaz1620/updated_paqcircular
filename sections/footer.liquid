@@ -146,8 +146,8 @@
   {%- endif -%}
 {%- endcapture -%}
   
-<footer class="site-footer critical-hidden" role="contentinfo" data-section-id="{{ section.id }}" data-section-type="footer-section">
-  <div class="page-title-footer__wrap"> 
+<footer class="site-footer critical-hidden  grid-container" role="contentinfo" data-section-id="{{ section.id }}" data-section-type="footer-section">
+  <div class="page-title-footer__wrap footer_logo"> 
     <div class="site-header__logo">
         {% if section.settings.logo %}
           {%- assign img_url = section.settings.logo | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
@@ -175,7 +175,7 @@
     </div>
   </div> 
 
-  <div class="page-width">
+  <div class="footer_menu">
     <div class="site-footer__content">
       {%- for block in section.blocks -%}
 
@@ -268,7 +268,7 @@
 
   {%- assign socials = "Facebook Twitter Pinterest Instagram Tumblr Snapchat YouTube Vimeo" | split: ' ' -%}
 
-  <div class="page-width">
+  <div class="footer_socials">
     <div class="grid grid--no-gutters small--text-center grid--footer-float-right">
       {%- if show_selectors -%}
         <div class="grid__item one-half small--one-whole">

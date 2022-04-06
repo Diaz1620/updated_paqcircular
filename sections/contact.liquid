@@ -1,0 +1,20 @@
+<div class="contact-form_image" style="">
+    {% if section.settings.hasImage %}
+        {% assign img_url = section.settings.hasImage.alt %}
+        <img src="{{ section.settings.hasImage | img_url: 'large' }}" alt="{{ img_url }}" class="form-image_width" >
+    {% endif %}
+</div>
+
+
+{% schema %}
+    {
+        "name": "Image",
+        "settings": [
+            {
+                "type":"image_picker",
+                "label":"Select Image",
+                "id":"hasImage"
+            }
+        ]
+    }
+{% endschema %}

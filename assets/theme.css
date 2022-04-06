@@ -688,7 +688,7 @@ textarea {
     width: 100%; }
   /* Halves */
   .medium-up--one-half {
-    width: 50%; }
+    width: 100%; }
   /* Thirds */
   .medium-up--one-third {
     width: 33.33333%; }
@@ -1953,7 +1953,7 @@ input[type="search"] {
 .form-vertical .disclosure__toggle,
 .form-vertical textarea {
   display: block;
-  width: 40%;
+  width: 70%;
   margin-bottom: 19.44444px; }
   .form-vertical input.input--error,
   .form-vertical select.input--error,
@@ -5935,6 +5935,38 @@ textarea, select, input, button { outline: none; }
 
 .footer-item{    margin: 0 auto;}
 
+/* Start of custom footer style */
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.footer_menu{
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer_logo{
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_socials{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 2rem;
+}
+
+/* End of custom footer style */
+
+
+
 .feature-row {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6700,6 +6732,30 @@ textarea, select, input, button { outline: none; }
 .newsletter-section .contact-form .btn:hover {
   background-color: var(--color-btn-newsletter-focus);
 }
+
+/* Start of contact form custom layout */
+
+.contact_grid-container{
+  display: grid;
+  grid-template-columns: auto 30%;
+  margin: 1rem;
+}
+
+/* .contact_page {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem;
+} */
+
+.contact-form_image{
+  align-self: center;
+  /* padding-right: 1rem; */
+  /* margin-left: 2rem; */
+  /* width: 30rem; */
+}
+
+/* End of contact form custom layout */
 
 .rich-text__heading--large {
   font-size: 1.4em; 
